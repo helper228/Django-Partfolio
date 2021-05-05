@@ -1,0 +1,458 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Clean - One Page Personal Portfolio</title>
+
+	<!-- CSS -->
+	<link href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+	<link href="{% static 'assets/css/font-awesome.min.css'%}" rel="stylesheet" media="screen">
+	<link href="{% static 'assets/css/simple-line-icons.css'%}" rel="stylesheet" media="screen">
+	<link href="{% static 'assets/css/animate.css'%}" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="{% static 'assets/css/style.css'%}" rel="stylesheet" media="screen">
+    
+    <script src="{% static 'assets/js/modernizr.custom.js'%}"></script>
+       
+</head>
+<body>
+
+	<!-- Preloader -->
+
+	<div id="preloader">
+		<div id="status"></div>
+	</div>
+
+	<!-- Home start -->
+
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Здраствуйте, меня завут Анатолий Подхватилин</div>
+			<h1>Full Stack Web Developer</h1>
+			<div class="start">Создание back-end сайта и front-end сайта</div>
+		</div>
+
+        <a href="#services">
+		<div class="scroll-down">
+            <span>
+                <i class="fa fa-angle-down fa-2x"></i>
+            </span>
+		</div>
+        </a>
+
+	</section>
+
+	<!-- Home end -->
+
+	<!-- Navigation start -->
+
+	<header class="header">
+
+		<nav class="navbar navbar-custom" role="navigation">
+
+			<div class="container">
+
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Анатолий Терехов</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="custom-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#home">Домашняя страница</a></li>
+						<li><a href="#services">Специализация</a></li>
+                        <li><a href="#portfolio">Работы</a></li>
+                        <li><a href="#skills">Навыки</a></li>
+						<li><a href="#testimonials">Коментарии</a></li>
+						<li><a href="#contact">контакты</a></li>
+					</ul>
+				</div>
+
+			</div><!-- .container -->
+
+		</nav>
+
+	</header>
+
+	<!-- Navigation end -->
+
+    <!-- Services start -->
+
+	<section id="services" class="pfblock pfblock-gray">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Чем я занимаюсь</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Я делаю то что люблю, готов увлечено заниматся этим и достигать новых вершин. 
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+
+
+				<div class="col-sm-6">
+
+					<div class="iconbox wow slideInLeft">
+						<div class="iconbox-icon">
+							<span class="icon-puzzle"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Web Programming</h3>
+							<div class="iconbox-desc">
+								Разработка или помощь в разработке программной состовляющей саата
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- <div class="col-sm-6"> -->
+
+
+
+				<div class="col-sm-6">
+
+					<div class="iconbox wow slideInRight">
+						<div class="iconbox-icon">
+							<span class="icon-question"></span>
+						</div>
+						<div class="iconbox-text">
+							<h3 class="iconbox-title">Консультация</h3>
+							<div class="iconbox-desc">
+								Помощь в разных вопросах, которые могут возникнуть в процессе разработке 
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			<!-- </div>.row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Services end -->
+    
+	<!-- Portfolio start -->
+
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Мои работы</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Любой проэкт, даже самый маленьки - это огромный опыт, которые не смогут дать обычные знания 
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+            
+            
+            <div class="row">
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static 'assets/images/item-1.jpg'%}" alt="img01"/>
+                            <figcaption>
+                                <h2> <span>Django</span></h2>
+                                <p>Даже этот сайт сделан на джанго</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static 'assets/images/item-2.jpg'%}" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Python</span></h2>
+                                <p>у меня огромный опыт работы с разными билионтеками</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+            
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="{% static 'assets/images/item-3.jpg'%}" alt="img01"/>
+                            <figcaption>
+                                <h2><span>Bot Telegram</span></h2>
+                                <p>Множество креативных проэктов</p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                    
+                </div>
+
+		</div><!-- .contaier -->
+
+	</section>
+
+	<!-- Portfolio end -->
+    
+    <!-- Skills start -->
+    
+    <section class="pfblock pfblock-gray" id="skills">
+		
+			<div class="container">
+			
+				<div class="row skills">
+					
+					<div class="row">
+
+                        <div class="col-sm-6 col-sm-offset-3">
+
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">Мои навыки</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle">
+                                    Самое главное это - опыт, которые не кто кроме практики дать не может, не одно объяснение или кника.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- .row -->
+					
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="80" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">80</span>
+                        </span>
+						<h3 class="text-center">Python</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="90" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">90</span>
+                        </span>
+						<h3 class="text-center">Django</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="85" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">85</span>
+                        </span>
+						<h3 class="text-center">JS</h3>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span data-percent="95" class="chart easyPieChart" style="width: 140px; height: 140px; line-height: 140px;">
+                            <span class="percent">95</span>
+                        </span>
+						<h3 class="text-center">Сеть</h3>
+					</div>
+					
+				</div><!--End row -->
+			
+			</div>
+		
+    </section>
+    
+    <!-- Skills end -->
+
+	<!-- CallToAction start -->
+
+	<section class="calltoaction">
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 class="wow slideInRight" data-wow-delay=".1s">Что нужно для хорошего ?</h2>
+					<div class="calltoaction-decription wow slideInRight" data-wow-delay=".2s">
+						Я свободен для фриланс проэктов
+					</div>
+				</div>
+
+				<div class="col-md-12 col-lg-12 calltoaction-btn wow slideInRight" data-wow-delay=".3s">
+					<a href="#contact" class="btn btn-lg">я сдесь</a>
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- CallToAction end -->
+
+	<!-- Testimonials start -->
+
+	<section id="testimonials" class="pfblock pfblock-gray">
+
+		<div class="container">
+            
+            <div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">Что говорят клиенты </h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Человека можно узнать не потому-что он говорит, а по тому что о нем говорят другие люди.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+            <div class="row">
+
+			<div id="cbp-qtrotator" class="cbp-qtrotator">
+                <div class="cbp-qtcontent">
+                    <img src="{% static 'assets/images/client-1.jpg'%}" alt="client-1" />
+                    <blockquote>
+                      <p>Работай осталась довольна, сделанно быстра качественно, весь код прокаментирован. В дальнейшем проблем небыло</p>
+                      <footer>Алекперов Кирим</footer>
+                    </blockquote>
+                </div>
+                <div class="cbp-qtcontent">
+                    <img src="{% static 'assets/images/client-2.jpg'%}" alt="client-2" />
+                    <blockquote>
+                      <p>Я реально доволен выполненой работай, сделано бысро и не глючит, проблем с работай нет.</p>
+                      <footer>Владимерова Анастасия</footer>
+                    </blockquote>
+                </div>
+
+            </div>		
+
+            </div><!-- .row -->
+
+					
+		</div><!-- .row -->
+	</section>
+
+	<!-- Testimonial end -->
+
+
+	<!-- Contact start -->
+
+	<section id="contact" class="pfblock">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">способы связи со мной</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle">
+							Для того что бы с нами связатся надо отправить свое имя, почту по которой вам можно написать, и сообщение с задачей или проблемой.
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- .row -->
+
+			<div class="row">
+
+				<div class="col-sm-6 col-sm-offset-3">
+					<h1>{{ok}}</h1>
+					<form id="contact-form" role="form" method="post" >
+						{% csrf_token %}
+						<div class="ajax-hidden">
+							<div class="form-group wow fadeInUp">
+								<label class="sr-only" for="c_name">Имя</label>
+								<input type="text" id="c_name" class="form-control" name="c_name" placeholder="Имя">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".1s">
+								<label class="sr-only" for="c_email">Email</label>
+								<input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+							</div>
+
+							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
+								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Сообщение"></textarea>
+							</div>
+
+							<button type="submit" id='send' class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Отправить</button>
+						</div>
+						<div class="ajax-response"></div>
+					</form>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-sm-12">
+
+					<ul class="social-links">
+						<li><a href="https://vk.com/qwerty1e" class="wow fadeInUp"><i class="fa fa-vk"></i></a></li>
+						<li><a href="index.html#" class="wow fadeInUp" data-wow-delay=".2s"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+
+				</div>
+
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+
+	<!-- Footer end -->
+
+	<!-- Scroll to top -->
+
+	<div class="scroll-up">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
+    
+    <!-- Scroll to top end-->
+
+	<!-- Javascript files -->
+
+	<script src="{% static 'assets/js/jquery-1.11.1.min.js'%}"></script>
+	<script src="{% static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+	<script src="{% static 'assets/js/jquery.parallax-1.1.3.js'%}"></script>
+	<script src="{% static 'assets/js/imagesloaded.pkgd.js'%}"></script>
+	<script src="{% static 'assets/js/jquery.sticky.js'%}"></script>
+	<script src="{% static 'assets/js/smoothscroll.js'%}"></script>
+	<script src="{% static 'assets/js/wow.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.easypiechart.js'%}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js'%}"></script>
+    <script src="{% static 'assets/js/jquery.cbpQTRotator.js'%}"></script>
+	<script src="{% static 'assets/js/custom.js'%}"></script>
+
+</body>
+</html>
